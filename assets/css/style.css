@@ -1,0 +1,67 @@
+/* Style pour la mise en page générale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    overflow: hidden; /* Pour gérer le flottement des éléments enfants */
+}
+
+#searchSection {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+#container-quiz {
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+#quiz {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #bbbaba;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.button-answer {
+    flex-basis: calc(50% - 5px);
+    padding: 10px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-answer:hover {
+    background-color: #28a745; /* Couleur de fond au survol */
+    color: #fff; /* Couleur du texte au survol */
+}
