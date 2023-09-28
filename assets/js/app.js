@@ -70,7 +70,7 @@ function createQuiz() {
                         alert(`Mauvaise réponse. Le drapeau appartient à ${countriesInFrench[correctCountry]}.`);
                     }
 
-                    // Option Bonus : Rechargez une nouvelle question
+                    // Option Bonus : nouvelle question
                     createQuiz();
                 });
                 question.appendChild(answerButton);
@@ -89,7 +89,7 @@ nextQuestionBtn.addEventListener('click', function() {
     createQuiz();
 });
 
-// Fonction pour afficher les informations sur le pays recherché
+// Fonction pour afficher les informations sur le pays
 function displaySearchResults(countryData) {
     searchResults.innerHTML = `
         <h3>${countryData.name.common}</h3>
@@ -101,7 +101,7 @@ function displaySearchResults(countryData) {
     `;
 }
 
-// Écoutez le clic sur le bouton de recherche
+// fonction clic sur le bouton de recherche
 searchButton.addEventListener('click', function() {
     const countryName = countrySearchInput.value;
 
@@ -121,6 +121,5 @@ searchButton.addEventListener('click', function() {
     };
     xhr.send();
 });
-
 // Appel à la fonction pour créer le quizz dès le chargement de la page
 createQuiz();
